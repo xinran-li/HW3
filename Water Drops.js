@@ -1,4 +1,3 @@
-# HW3
 var x = 210;
 var y = 220;
 var waterLevel = 1;
