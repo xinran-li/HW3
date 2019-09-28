@@ -1,0 +1,19 @@
+What code draws the blades of grass?
+	line 10 to 11:
+		stroke(random(60, 70), 100, 90);
+       		line(x, height-10, x+random(-10, 10), height-10-random(h));
+
+What code makes the "lawnmower" come by? How often does it come by?
+	line 21 to 25
+		  if (random(100) > 99.9) {
+ 		   fill(25);
+		   rect(0, 0, width, height-10);
+		    h = 10;
+    		}
+	as long as the the height of the grass is reaching at the y-axis randomly from 0 to 100, it will create a 	white rectangle to be “lawnmower”.
+
+What's the point of the h variable?
+	The height of the grass.
+
+What does the -10 do in the second and fourth arguments of the line function, height-10-random(h) ? Why is it there?
+	line 11 the height-10 means the surface of the mud, -random(h) means the height 	of the grass growing at the random height from 0 to 10.
