@@ -8,7 +8,7 @@ function setup() {
 }
 
 function draw() {
-  background(200);
+  background(200, 100);
   noStroke();
 
   // draw pipe
@@ -17,7 +17,7 @@ function draw() {
   rect(185, 190, 25, 40);
   
   // draw drip
-  fill(0, 0, 220);
+  fill(0, 0, 220,);
   ellipse(x, y, 10);
 
   // down 3 pixels each frame, but maybe should be accelerating?
@@ -28,11 +28,8 @@ function draw() {
     // reset
     y = 220;
     waterLevel = waterLevel + 1;
-    
-
   }
   
   fill(0, 0, 200);
   rect(0, height-waterLevel, 400, waterLevel);
-    
-}
+  }
