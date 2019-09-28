@@ -62,7 +62,7 @@ function draw() {
   r += 0.05;
 
   // if reach past the top a bunch
-  if (y < -150) {
+  if (y < -10) {
     y = 290;
     Dia = Dia + 10;
     DiaColor = DiaColor - 10;
